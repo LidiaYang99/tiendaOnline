@@ -1,0 +1,35 @@
+GET http://localhost:3000/api/products
+
+###
+GET http://localhost:3000/api/products/64a6d356e0fc051d146e8cae
+
+###
+POST http://localhost:3000/api/products
+Content-Type: application/json
+
+{
+    "name":"Funda movil",
+    "description":"para proteger el movol",
+    "price":15,
+    "available":true,
+    "stock":34,
+    "department":"tech"
+
+}
+
+
+###
+POST http://localhost:3000/api/users/register
+Content-Type: application/json
+
+{
+    "username": "Rocio",
+    "email": "Rocio@gmail.com",
+    "password": "123456"
+}
+
+###
+PUT http://localhost:3000/api/users/64a7deecc45d1009ed46ff53/buy/64a7de14dac7f4c815a8a6d2
+
+###
+GET http://localhost:3000/api/users
